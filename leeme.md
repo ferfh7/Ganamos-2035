@@ -1,3 +1,4 @@
 # Mi camino a experto 2035
-Inicio del proyecto probando
-sigue sin andar
+## Bitácora Día 2
+Aprendiendo a usar ramas (Branches).
+Este cambio vive en un universo paralelo antes de ser aprobado.
