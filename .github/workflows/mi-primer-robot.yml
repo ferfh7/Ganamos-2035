@@ -1,16 +1,21 @@
 name: Mi Primer Robot 🤖
 
+# El "Gatillo": ¿Cuándo se despierta el robot?
+# Se activará cada vez que hagas un 'push' al repo.
 on: [push]
 
 jobs:
-  saludo-cyberpunk:
+  tarea-de-prueba:
+    # El "Entorno": ¿Dónde corre esto?
+    # GitHub nos presta un servidor Linux (Ubuntu) gratis.
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout del código
-        uses: actions/checkout@v4
+      - name: Paso 1 - Saludar al universo
+        run: echo "¡Hola Mundo! Soy tu robot ejecutándose en la nube de GitHub."
       
-      - name: Saludar al creador
-        run: |
-          echo "Iniciando sistemas..."
-          echo "Hola Fernando. Soy tu asistente automatizado."
-          echo "Todo parece estar en orden en el año 2025."
+      - name: Paso 2 - Mostrar fecha y hora del servidor
+        run: date
+
+      - name: Paso 3 - Listar archivos del sistema
+        run: ls -la"
