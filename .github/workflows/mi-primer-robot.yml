@@ -1,0 +1,16 @@
+name: Mi Primer Robot 🤖
+
+on: [push]
+
+jobs:
+  saludo-cyberpunk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+      
+      - name: Saludar al creador
+        run: |
+          echo "Iniciando sistemas..."
+          echo "Hola Fernando. Soy tu asistente automatizado."
+          echo "Todo parece estar en orden en el año 2025."
